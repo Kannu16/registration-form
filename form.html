@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Document</title>
+  </head>
+   <!-- responsive design code for home page -->
+   <style>
+   @media(max-width: 600px){
+    body{
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    form{
+      width: 265px;
+      height: 300px;
+      margin: 30% auto;
+    }
+    .password-strength-indicator{
+       left: 380px;
+
+    }
+    .btn-register{
+        margin-left: 10%;
+    }
+
+}
+
+   </style>
+   <!-- responsive design code for home page -->
+
+  <body>
+    <form action="index.php" method="POST" class="mt-5">
+      <img src="image/user.png" class="user-img" />
+      <div class="input-box">
+        <span><i class="my-icon fas fa-user"></i></span>
+        <input type="text" placeholder="User Name" name="Uname" required />
+      </div>
+      <div class="input-box">
+        <span><i class="my-icon fas fa-envelope"></i></span>
+        <input type="email" placeholder="Email Id" name="email" required />
+      </div>
+      <div class="input-box">
+        <span><i class="my-icon fas fa-key"></i></span>
+        <input
+          type="password"
+          placeholder="Password"
+          id="password"
+          name="password"
+          required
+        />
+      </div>
+      <button type="submit" class="btn-register">
+        <i class="my-btn-icon fa fa-sign-in-alt"></i>REGISTER
+      </button>
+    </form>
+    <script src="js/jquery.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.passwordstrength.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#password").passwordStrength();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+body{
+    background: #e3edf7;
+    font-family: sans-serif;
+}
+form{
+    background-color: rgb(59, 59, 134);
+    width: 500px;
+    margin: 9% auto;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 20px 40px rgb(0, 0, 0)
+}
+.input-box{
+    margin: 30px auto;
+    width: 80%;
+    position: relative;
+    box-shadow: 0 8px 10px -10px rgb(0, 0, 0);
+}
+.input-box input{
+    width: 80%;
+    height: 40px;
+    border: none;
+    background: #efefef;
+    padding-left: 50px;
+}
+span{
+    position: absolute;
+    left: 14;
+    top: 0;
+    height: 42px;
+    width: 40px;
+    background: linear-gradient(to right,#4CFA50,#00BCD4);
+}
+span .my-icon{
+    padding: 10px;
+    color: white;
+}
+button{
+    width: 130px;
+    height: 40px;
+    margin-left: 13%;
+    display: block;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    outline: none;
+    background: linear-gradient(to right,#4CFA50,#00BCD4);
+    box-shadow:  0 8px 10px -10px rgb(0, 0, 0);
+    cursor: pointer;
+}
+.my-btn-icon{
+    margin-right: 10px;
+}
+.user-img{
+    width: 100px;
+    margin-top: -100px;
+}
+.password-strength-indicator{
+    font-size: 11px;
+    display: inline-block;
+    height: 13px;
+    min-width: 22px;
+    width: 82px;
+    text-align: center;
+    transition: 1s;
+    margin: 48px -373px;
+    color: white;
+}
+.password-strength-indicator.very-weak{
+  background: #cf0000;
+  width: 30%;
+  color: black;
+}
+
+.password-strength-indicator.weak{
+    background: #f6891f;
+    width: 40%;
+    color: black;
+  }
+
+.password-strength-indicator.mediocre{
+    background: #eeee00;
+    width: 60%;
+    color: black;
+ }
+
+.password-strength-indicator.strong{
+    background: #e033ff;
+    width: 80%;
+    color: black;
+  }
+
+.password-strength-indicator.very-strong{
+    background: #22cf00;
+    width: 94%;
+    color: black;
+  }
+  
+
+  
+
+   
+ 

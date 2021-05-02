@@ -1,0 +1,20 @@
+@media(max-width: 600px){
+    body{
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    form{
+      width: 265px;
+      height: 300px;
+      margin: 30% auto;
+    }
+    .password-strength-indicator{
+       left: 380px;
+
+    }
+    .btn-register{
+        margin-left: 10%;
+    }
+
+
+}
